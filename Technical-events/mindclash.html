@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mindclash — Technical Quiz | Erronix 2K26</title>
+  <link rel="icon" type="image/x-icon" href="../assets/weblogofinal.png">
+  <link rel="stylesheet" href="../assets/css/design-system.css">
+  
+  <style>
+    .event-page-container {
+      max-width: 980px;
+      margin: 110px auto 60px auto;
+      padding: 0 20px;
+    }
+
+    .event-hero-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-xl);
+      padding: 40px;
+      box-shadow: var(--shadow-md);
+      margin-bottom: 32px;
+      text-align: center;
+    }
+
+    .event-section-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-lg);
+      padding: 28px 32px;
+      box-shadow: var(--shadow-sm);
+      margin-bottom: 24px;
+      transition: border-color var(--transition-fast);
+    }
+
+    .event-section-card:hover {
+      border-color: var(--border-accent);
+    }
+
+    .event-section-title {
+      font-size: 1.35rem;
+      color: var(--primary-navy);
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .event-section-title::before {
+      content: "";
+      display: inline-block;
+      width: 5px;
+      height: 22px;
+      background: var(--gradient-primary);
+      border-radius: 4px;
+    }
+
+    ul, ol {
+      padding-left: 22px;
+      margin-bottom: 12px;
+    }
+
+    li {
+      margin-bottom: 8px;
+      color: var(--text-secondary);
+      line-height: 1.6;
+    }
+
+    a {
+      color: var(--brand-blue);
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Decorative Light Blobs -->
+  <div class="bg-blob bg-blob-1"></div>
+  <div class="bg-blob bg-blob-2"></div>
+
+  <!-- Navigation Bar -->
+  <header class="navbar-custom">
+    <div class="nav-container">
+      <a href="../index.html" class="nav-brand">
+        <img src="../assets/mainlogo1.png" alt="Erronix Logo" class="nav-logo-img">
+        <span class="nav-college-title">University College of Engineering Arni</span>
+      </a>
+
+      <a href="../index.html#events" class="btn-secondary" style="padding: 8px 18px; font-size: 0.9rem;">
+        &larr; Back to Events
+      </a>
+    </div>
+  </header>
+
+  <!-- Main Event Content -->
+  <main class="event-page-container">
+    
+    <!-- Hero Header -->
+    <div class="event-hero-card">
+      <span class="badge-tag mb-2">Technical Event</span>
+      <h1 style="font-size: 2.5rem; color: var(--primary-navy); margin-top: 8px;">Mindclash</h1>
+      <p style="font-size: 1.1rem; color: var(--brand-blue); font-weight: 600;">TECHNICAL QUIZ</p>
+      
+      <div style="margin-top: 24px;">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeVVcMIacGliQJLwqJHbGX9MfFLpU1Rz8WBMtshO1jCIdKPGQ/viewform" 
+           target="_blank" rel="noopener noreferrer" class="btn-primary">
+          Register Now
+        </a>
+      </div>
+    </div>
+
+    <!-- About Section -->
+    <div class="event-section-card">
+      <h2 class="event-section-title">About the Event</h2>
+      <p style="color: var(--text-secondary); line-height: 1.7;">
+        Mindclash is a technical quiz designed to test knowledge, analytical skills, and quick thinking of Computer Science enthusiasts. 
+        The event consists of multiple rounds with increasing difficulty, covering core computer science topics and emerging technologies.
+      </p>
+    </div>
+
+    <!-- Time & Venue -->
+    <div class="event-section-card">
+      <h2 class="event-section-title">Time & Venue</h2>
+      <ul>
+        <li><b>Date:</b> 31/10/2025</li>
+        <li><b>Time:</b> 12.00 PM to 1.00 PM</li>
+        <li><b>Venue:</b> Will be updated soon</li>
+      </ul>
+    </div>
+
+    <!-- Category & Participation -->
+    <div class="event-section-card">
+      <h2 class="event-section-title">Category & Participation</h2>
+      <ul>
+        <li><b>Category/Theme:</b> Computer Science & Engineering (CSE)</li>
+        <li><b>Participation:</b> Individual (Solo)</li>
+      </ul>
+    </div>
+
+    <!-- Registration & Prerequisites -->
+    <div class="event-section-card">
+      <h2 class="event-section-title">Registration & Prerequisites</h2>
+      <ul>
+        <li>Registration Process: Online</li>
+        <li>Prerequisite: Registration must be completed before the deadline on <b>29/10/2025</b>.</li>
+        <li>Participants must arrive at the venue at least <b>10 minutes</b> before the start time</li>
+        <li>The quiz will be conducted <b>online</b></li>
+      </ul>
+    </div>
+
+    <!-- Event Overview -->
+    <div class="event-section-card">
+      <h2 class="event-section-title">Event Overview</h2>
+      <ul>
+        <li>The quiz is divided into <b>three rounds</b> with increasing difficulty.</li>
+        <li>Participants are expected to manage their time effectively and answer accurately.</li>
+      </ul>
+    </div>
+
+    <!-- General Rules & Guidelines -->
+    <div class="event-section-card">
+      <h2 class="event-section-title">General Rules & Guidelines</h2>
+      <p style="font-weight: 600; color: var(--brand-blue); margin-bottom: 8px;">DOs:</p>
+      <ol>
+        <li>Arrive at the quiz venue before the scheduled time.</li>
+        <li>Carefully read and understand the quiz rules and format.</li>
+        <li>Participants are required to complete the quiz in a single browser window/tab without switching to other tabs or windows during the quiz.</li>
+        <li>Any attempt to switch tabs or windows will result in immediate disqualification from the quiz.</li>
+        <li>A countdown timer will be displayed on the quiz page, and participants must submit their answers before the timer expires.</li>
+        <li>Failure to submit answers before the timer expires will result in the quiz being automatically submitted with any unanswered questions marked as "Not Attempted".</li>
+        <li>In the event of any technical issues or disruptions during the quiz, participants must immediately notify the student co-ordinators to seek assistance.</li>
+      </ol>
+      
+      <p style="margin-top: 16px; font-weight: 600; color: #DC2626;">DON’Ts:</p>
+      <ol>
+        <li>No cheating or malpractice will be tolerated.</li>
+        <li>Do not discuss questions or answers with other participants.</li>
+        <li>Electronic devices (smartphones, smartwatches, etc.) are strictly prohibited inside the quiz venue.</li>
+        <li>Avoid any behavior that could be considered unfair or against the rules.</li>
+        <li>Respect the judges’ and officials’ decisions; disputes are not allowed.</li>
+      </ol>
+    </div>
+
+    <!-- Event Flow -->
+    <div class="event-section-card">
+      <h2 class="event-section-title">Event Flow & Time Allocation</h2>
+      <ul>
+        <li><b>Round 1 – Elimination:</b> 20 Easy Questions</li>
+        <li><b>Round 2 – Elimination:</b> 15 Medium Questions</li>
+        <li><b>Round 3 – Winner Selection:</b> 10 Hard Questions</li>
+      </ul>
+    </div>
+
+    <!-- Evaluation Criteria -->
+    <div class="event-section-card">
+      <h2 class="event-section-title">Evaluation Criteria</h2>
+      <ul>
+        <li>Correctness of answers</li>
+        <li>Accuracy in coding/problem-solving (Round 3)</li>
+      </ul>
+    </div>
+
+    <!-- Rewards & Recognition -->
+    <div class="event-section-card">
+      <h2 class="event-section-title">Rewards & Recognition</h2>
+      <ul>
+        <li>All participants will receive a <b>Participation Certificate</b>.</li>
+        <li><b>Winners and Runners-up</b> will be awarded special prizes in recognition of their outstanding performance.</li>
+      </ul>
+    </div>
+
+    <!-- Code of Conduct -->
+    <div class="event-section-card">
+      <h2 class="event-section-title">Code of Conduct</h2>
+      <ul>
+        <li>Participants must follow all rules strictly.</li>
+        <li>Misbehaviour, disputes, or violations may lead to disqualification.</li>
+        <li>Maintain professionalism and decorum during the quiz.</li>
+      </ul>
+    </div>
+
+    <!-- Contact Info -->
+    <div class="event-section-card">
+      <h2 class="event-section-title">Contact Information</h2>
+      <p><b>Event Coordinators:</b></p>
+      <ul>
+        <li>Subhasri - <a href="tel:+916374003424">+91 63740 03424</a></li>
+        <li>Santhosh Kumar – <a href="tel:+918072655413">+91 80726 55413</a></li>
+      </ul>
+    </div>
+
+    <!-- CTA Register -->
+    <div style="text-align: center; margin-top: 40px;">
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSeVVcMIacGliQJLwqJHbGX9MfFLpU1Rz8WBMtshO1jCIdKPGQ/viewform" 
+         target="_blank" rel="noopener noreferrer" class="btn-primary" style="padding: 14px 36px; font-size: 1.1rem;">
+        Register Now
+      </a>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer style="text-align: center; padding: 40px 20px; border-top: 1px solid var(--border-light); background: var(--bg-surface); margin-top: 60px;">
+    <p style="color: var(--text-secondary); font-size: 0.95rem;">
+      &copy; 2026 Erronix. All Rights Reserved. | Department of Computer Science and Engineering
+    </p>
+  </footer>
+</body>
+</html>

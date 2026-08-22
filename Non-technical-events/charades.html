@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Charades — Dumb C | Erronix 2K26</title>
+  <link rel="icon" type="image/x-icon" href="../assets/weblogofinal.png">
+  <link rel="stylesheet" href="../assets/css/design-system.css">
+  
+  <style>
+    .event-page-container {
+      max-width: 980px;
+      margin: 110px auto 60px auto;
+      padding: 0 20px;
+    }
+
+    .event-hero-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-xl);
+      padding: 40px;
+      box-shadow: var(--shadow-md);
+      margin-bottom: 32px;
+      text-align: center;
+    }
+
+    .event-section-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-lg);
+      padding: 28px 32px;
+      box-shadow: var(--shadow-sm);
+      margin-bottom: 24px;
+      transition: border-color var(--transition-fast);
+    }
+
+    .event-section-card:hover {
+      border-color: var(--border-accent);
+    }
+
+    .event-section-title {
+      font-size: 1.35rem;
+      color: var(--primary-navy);
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .event-section-title::before {
+      content: "";
+      display: inline-block;
+      width: 5px;
+      height: 22px;
+      background: var(--gradient-primary);
+      border-radius: 4px;
+    }
+
+    ul, ol {
+      padding-left: 22px;
+      margin-bottom: 12px;
+    }
+
+    li {
+      margin-bottom: 8px;
+      color: var(--text-secondary);
+      line-height: 1.6;
+    }
+
+    a {
+      color: var(--brand-blue);
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Decorative Light Blobs -->
+  <div class="bg-blob bg-blob-1"></div>
+  <div class="bg-blob bg-blob-2"></div>
+
+  <!-- Navigation Bar -->
+  <header class="navbar-custom">
+    <div class="nav-container">
+      <a href="../index.html" class="nav-brand">
+        <img src="../assets/mainlogo1.png" alt="Erronix Logo" class="nav-logo-img">
+        <span class="nav-college-title">University College of Engineering Arni</span>
+      </a>
+
+      <a href="../index.html#events" class="btn-secondary" style="padding: 8px 18px; font-size: 0.9rem;">
+        &larr; Back to Events
+      </a>
+    </div>
+  </header>
+
+  <!-- Main Event Content -->
+  <main class="event-page-container">
+    
+    <!-- Hero Header -->
+    <div class="event-hero-card">
+      <span class="badge-tag badge-violet mb-2">Non-Technical Event</span>
+      <h1 style="font-size: 2.5rem; color: var(--primary-navy); margin-top: 8px;">Charades</h1>
+      <p style="font-size: 1.1rem; color: var(--brand-violet); font-weight: 600;">DUMB C CONTEST</p>
+      
+      <div style="margin-top: 24px;">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeVVcMIacGliQJLwqJHbGX9MfFLpU1Rz8WBMtshO1jCIdKPGQ/viewform" 
+           target="_blank" rel="noopener noreferrer" class="btn-primary">
+          Register Now
+        </a>
+      </div>
+    </div>
+
+    <!-- About Section -->
+    <div class="event-section-card">
+      <h2 class="event-section-title">About the Event</h2>
+      <p style="color: var(--text-secondary); line-height: 1.7;">
+        Dumb C (Charades) is a fun and interactive event where participants test their creativity, 
+        quick thinking, and team coordination. One person acts without speaking, while the others 
+        guess the word, phrase, or title within a set time limit. It’s all about teamwork, gestures, 
+        and having fun!
+      </p>
+    </div>
+
+    <!-- Time & Venue -->
+    <div class="event-section-card">
+      <h2 class="event-section-title">Time & Venue</h2>
+      <p><b>Date:</b> 31/10/2025</p>
+      <p><b>Time:</b> 11.00 AM to 12.00 PM</p>
+      <p><b>Venue:</b> Will be updated soon.</p>
+    </div>
+
+    <!-- Event Flow & Rules -->
+    <div class="event-section-card">
+      <h2 class="event-section-title">Event Flow & Rules</h2>
+      <ul>
+        <li><b>Form Teams:</b> Players are divided into teams.</li>
+        <li><b>Choose Roles:</b> Each team selects one actor and at least one guesser.</li>
+        <li><b>Get the Item:</b> A judge or organizer provides the actor with an item to mime 
+            (e.g., a movie title, actor, song, or phrase).</li>
+        <li><b>Mime and Guess:</b> The actor begins miming the item <em>without speaking</em>, 
+            while teammates try to guess.</li>
+        <li><b>Set a Time Limit:</b> Teams usually get <b>1 minute 30 seconds</b> to guess correctly.</li>
+        <li><b>Win or Lose:</b> The team that guesses within the time limit scores points.</li>
+      </ul>
+    </div>
+
+    <!-- Key Rules to Remember -->
+    <div class="event-section-card">
+      <h2 class="event-section-title">Key Rules to Remember</h2>
+      <ul>
+        <li><b>No Talking:</b> Actors cannot use words or sounds.</li>
+        <li><b>Use Gestures:</b> Only hand/body movements are allowed.</li>
+        <li><b>Guessing is Allowed:</b> Teammates may call out answers freely.</li>
+        <li><b>No Sign Language:</b> Using alphabets or sign language is not permitted.</li>
+      </ul>
+    </div>
+
+    <!-- General Guidelines -->
+    <div class="event-section-card">
+      <h2 class="event-section-title">General Guidelines</h2>
+      <ul>
+        <li>Participants must register individually or as part of a team.</li>
+        <li>Follow the instructions provided by the event coordinators.</li>
+        <li>Cheating or unfair play leads to disqualification.</li>
+        <li>Decisions by judges are final and binding.</li>
+        <li>Maintain sportsmanship and respect for fellow participants.</li>
+      </ul>
+    </div>
+
+    <!-- Rewards & Recognition -->
+    <div class="event-section-card">
+      <h2 class="event-section-title">Rewards & Recognition</h2>
+      <ul>
+        <li>Exciting prizes are waiting for participants who showcase exceptional talent and creativity.</li>
+      </ul>
+    </div>
+
+    <!-- Student Coordinators -->
+    <div class="event-section-card">
+      <h2 class="event-section-title">Student Coordinators</h2>
+      <ul>
+        <li>Sangeetha - <a href="tel:+919345668972">+91 93456 68972</a></li>
+        <li>Vetrivel – <a href="tel:+916380268095">+91 63802 68095</a></li>
+      </ul>
+      <p style="margin-top: 10px; color: var(--text-muted);">
+        For any event or registration-related queries, feel free to reach out to the coordinators.
+      </p>
+    </div>
+
+    <!-- CTA Register -->
+    <div style="text-align: center; margin-top: 40px;">
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSeVVcMIacGliQJLwqJHbGX9MfFLpU1Rz8WBMtshO1jCIdKPGQ/viewform" 
+         target="_blank" rel="noopener noreferrer" class="btn-primary" style="padding: 14px 36px; font-size: 1.1rem;">
+        Register Now
+      </a>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer style="text-align: center; padding: 40px 20px; border-top: 1px solid var(--border-light); background: var(--bg-surface); margin-top: 60px;">
+    <p style="color: var(--text-secondary); font-size: 0.95rem;">
+      &copy; 2026 Erronix. All Rights Reserved. | Department of Computer Science and Engineering
+    </p>
+  </footer>
+</body>
+</html>

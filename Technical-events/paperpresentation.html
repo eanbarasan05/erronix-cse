@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Innovision — Paper Presentation | Erronix 2K26</title>
+  <link rel="icon" type="image/x-icon" href="../assets/weblogofinal.png">
+  <link rel="stylesheet" href="../assets/css/design-system.css">
+  
+  <style>
+    .event-page-container {
+      max-width: 980px;
+      margin: 110px auto 60px auto;
+      padding: 0 20px;
+    }
+
+    .event-hero-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-xl);
+      padding: 40px;
+      box-shadow: var(--shadow-md);
+      margin-bottom: 32px;
+      text-align: center;
+      position: relative;
+    }
+
+    .event-section-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-lg);
+      padding: 28px 32px;
+      box-shadow: var(--shadow-sm);
+      margin-bottom: 24px;
+      transition: border-color var(--transition-fast);
+    }
+
+    .event-section-card:hover {
+      border-color: var(--border-accent);
+    }
+
+    .event-section-title {
+      font-size: 1.35rem;
+      color: var(--primary-navy);
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .event-section-title::before {
+      content: "";
+      display: inline-block;
+      width: 5px;
+      height: 22px;
+      background: var(--gradient-primary);
+      border-radius: 4px;
+    }
+
+    .important-topic-box {
+      background: var(--gradient-soft);
+      border: 1px solid rgba(37, 99, 235, 0.2);
+      border-radius: var(--radius-lg);
+      padding: 28px;
+      margin: 28px 0;
+    }
+
+    ul, ol {
+      padding-left: 22px;
+      margin-bottom: 12px;
+    }
+
+    li {
+      margin-bottom: 8px;
+      color: var(--text-secondary);
+      line-height: 1.6;
+    }
+
+    a {
+      color: var(--brand-blue);
+      text-decoration: underline;
+    }
+
+    a:hover {
+      color: var(--brand-violet);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Decorative Light Blobs -->
+  <div class="bg-blob bg-blob-1"></div>
+  <div class="bg-blob bg-blob-2"></div>
+
+  <!-- Navigation Bar -->
+  <header class="navbar-custom">
+    <div class="nav-container">
+      <a href="../index.html" class="nav-brand">
+        <img src="../assets/mainlogo1.png" alt="Erronix Logo" class="nav-logo-img">
+        <span class="nav-college-title">University College of Engineering Arni</span>
+      </a>
+
+      <a href="../index.html#events" class="btn-secondary" style="padding: 8px 18px; font-size: 0.9rem;">
+        &larr; Back to Events
+      </a>
+    </div>
+  </header>
+
+  <!-- Main Event Content -->
+  <main class="event-page-container">
+    
+    <!-- Hero Header -->
+    <div class="event-hero-card">
+      <span class="badge-tag mb-2">Technical Event</span>
+      <h1 style="font-size: 2.5rem; color: var(--primary-navy); margin-top: 8px;">Paper Presentation</h1>
+      <p style="font-size: 1.1rem; color: var(--brand-blue); font-weight: 600;">INNOVISION</p>
+      
+      <div style="margin-top: 24px;">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeVVcMIacGliQJLwqJHbGX9MfFLpU1Rz8WBMtshO1jCIdKPGQ/viewform" 
+           target="_blank" rel="noopener noreferrer" class="btn-primary">
+          Register Now
+        </a>
+      </div>
+    </div>
+
+    <!-- About Section -->
+    <div class="event-section-card">
+      <h2 class="event-section-title">About the Event</h2>
+      <p style="color: var(--text-secondary); line-height: 1.7;">
+        The Paper Presentation event encourages participants to research, innovate, and present their ideas before a panel of experts. 
+        It provides a platform to showcase technical knowledge, research skills, and creativity. Students can participate individually or as a team (1–3 members).
+      </p>
+    </div>
+
+    <!-- Time & Venue -->
+    <div class="event-section-card">
+      <h2 class="event-section-title">Time & Venue</h2>
+      <p><b>Date:</b> 31/10/2025</p>
+      <p><b>Time:</b> 11.00 AM to 1.00 PM</p>
+      <p><b>Venue:</b> Will be updated soon.</p>
+    </div>
+
+    <!-- Registration Details -->
+    <div class="event-section-card">
+      <h2 class="event-section-title">Registration Details</h2>
+      <ol>
+        <li>Registration Process: Online form submission.</li>
+        <li>Registration closes on <b>29/10/2025</b>.</li>
+        <li>Team Size: Minimum 1 and maximum 3 members.</li>
+        <li>Paper(abstract) Submission Deadline(Extended): <b>28/10/2025</b>.</li>
+        <li>Shortlisted candidates will be notified via email on or before <b>29/10/2025</b>.</li>
+      </ol>
+    </div>
+
+    <!-- General Rules -->
+    <div class="event-section-card">
+      <h2 class="event-section-title">General Rules</h2>
+      <ol>
+        <li>Participants must carry a valid college ID card.</li>
+        <li>Any form of malpractice will lead to disqualification.</li>
+        <li>The decision of the judges/organizers will be final.</li>
+      </ol>
+    </div>
+
+    <!-- Paper Presentation Rules -->
+    <div class="event-section-card">
+      <h2 class="event-section-title">Paper Presentation Rules</h2>
+      <ol>
+        <li>Presentation Time: 10 minutes total 
+          <ul>
+            <li>7 minutes for presenting</li>
+            <li>3 minutes for Q&amp;A</li>
+          </ul>
+        </li>
+        <li>Topics must be from the suggested list or relevant interdisciplinary topics with prior approval.</li>
+        <li>Paper Length: The paper should be between <b>4 to 6 pages</b> in total.</li>
+        <li>Submission Format:
+          <ul>
+            <li>Papers must follow the <b>IEEE format</b>.</li>
+            <li>PPT must be in 16:9 ratio.</li>
+            <li>Both hard and soft copies of the accepted paper and PPT must be submitted on the event day.</li>
+          </ul>
+        </li>
+        <li>Final PPT must be shared with <b>event coordinators</b> before <b>30/10/2025</b>.</li>
+        <li>A pen drive for backup is recommended (not mandatory).</li>
+        <li>Papers must be original — plagiarism will lead to immediate disqualification.</li>
+        <li>Download the IEEE format templates here:
+          <ul>
+            <li><a href="https://docs.google.com/document/d/1M4TR4AK0g_dZC9EH2pS-3FVtuyEoGZsE/edit?usp=drive_link&ouid=106747898224872817221&rtpof=true&sd=true" target="_blank">IEEE Format – Word (.docx)</a></li>
+            <li><a href="https://drive.google.com/file/d/1H_vayb3I7CDqOZS4zLP3X8-uicRAnxPa/view?usp=sharing" target="_blank">IEEE Format – PDF (.pdf)</a></li>
+          </ul>
+        </li>
+      </ol>
+    </div>
+
+    <!-- Event Flow -->
+    <div class="event-section-card">
+      <h2 class="event-section-title">Event Flow</h2>
+      <ol>
+        <li><b>Paper Submission (Soft Copy):</b> on or before <b>24/10/2025</b> to 
+          <a href="mailto:erronixcse@gmail.com">erronixcse@gmail.com</a> 
+          with the subject line: <b>"Paper Submission – Erronix 2K25"</b>.
+        </li>
+        <li><b>Shortlisted Teams Notification:</b> by <b>27/10/2025</b> via official email.</li>
+        <li><b>Registration Closes:</b> <b>29/10/2025</b>.</li>
+        <li><b>PPT Submission (Soft Copy):</b> on or before <b>30/10/2025</b> to 
+          <a href="mailto:erronixcse@gmail.com">erronixcse@gmail.com</a> 
+          with the subject line: <b>"PPT Submission – Erronix 2K25"</b>.
+        </li>
+        <li><b>Event Date:</b> <b>31/10/2025 (11.00 AM – 1.00 PM)</b></li>
+      </ol>
+    </div>
+
+    <!-- Rewards & Recognition -->
+    <div class="event-section-card">
+      <h2 class="event-section-title">Rewards & Recognition</h2>
+      <ul>
+        <li>All participants will receive a <b>Participation Certificate</b>.</li>
+        <li><b>Winners and Runners-up</b> will be awarded special prizes in recognition of their outstanding performance.</li>
+      </ul>
+    </div>
+
+    <!-- Code of Conduct -->
+    <div class="event-section-card">
+      <h2 class="event-section-title">Code of Conduct</h2>
+      <ol>
+        <li>Participants must report at the venue on time.</li>
+        <li>Maintain decorum during the event.</li>
+        <li>Any misbehaviour or violation of rules will lead to disqualification.</li>
+      </ol>
+    </div>
+
+    <!-- Suggested Topics -->
+    <div class="important-topic-box">
+      <h3 style="font-size: 1.25rem; color: var(--brand-violet); margin-bottom: 12px;">Suggested Domains & Topics</h3>
+      <ol>
+        <li>Artificial Intelligence & Machine Learning</li>
+        <li>GenAI</li>
+        <li>Data Science & Analytics</li>
+        <li>Cybersecurity & Networking</li>
+        <li>Computing Paradigms</li>
+        <li>Emerging Technologies</li>
+        <li>Human-Centric Computing</li>
+        <li>Hardware & Future Tech</li>
+        <li>Quantum Computing</li>
+        <li>Any other relevant technical topics</li>
+      </ol>
+    </div>
+
+    <!-- Contact Info -->
+    <div class="event-section-card">
+      <h2 class="event-section-title">Contact Information</h2>
+      <p><b>Event Coordinators:</b></p>
+      <ul>
+        <li>Swathi – <a href="tel:+916379087567">+91 63790 87567</a></li>
+        <li>Divakar – <a href="tel:+919790394285">+91 97903 94285</a></li>
+      </ul>
+    </div>
+
+    <!-- CTA Register -->
+    <div style="text-align: center; margin-top: 40px;">
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSeVVcMIacGliQJLwqJHbGX9MfFLpU1Rz8WBMtshO1jCIdKPGQ/viewform" 
+         target="_blank" rel="noopener noreferrer" class="btn-primary" style="padding: 14px 36px; font-size: 1.1rem;">
+        Register Now
+      </a>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer style="text-align: center; padding: 40px 20px; border-top: 1px solid var(--border-light); background: var(--bg-surface); margin-top: 60px;">
+    <p style="color: var(--text-secondary); font-size: 0.95rem;">
+      &copy; 2026 Erronix. All Rights Reserved. | Department of Computer Science and Engineering
+    </p>
+  </footer>
+</body>
+</html>

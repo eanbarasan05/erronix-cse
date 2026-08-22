@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ballistic Bash | Erronix 2K26</title>
+  <link rel="icon" type="image/x-icon" href="../assets/weblogofinal.png">
+  <link rel="stylesheet" href="../assets/css/design-system.css">
+  
+  <style>
+    .event-page-container {
+      max-width: 980px;
+      margin: 110px auto 60px auto;
+      padding: 0 20px;
+    }
+
+    .event-hero-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-xl);
+      padding: 40px;
+      box-shadow: var(--shadow-md);
+      margin-bottom: 32px;
+      text-align: center;
+    }
+
+    .event-section-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-lg);
+      padding: 28px 32px;
+      box-shadow: var(--shadow-sm);
+      margin-bottom: 24px;
+      transition: border-color var(--transition-fast);
+    }
+
+    .event-section-card:hover {
+      border-color: var(--border-accent);
+    }
+
+    .event-section-title {
+      font-size: 1.35rem;
+      color: var(--primary-navy);
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .event-section-title::before {
+      content: "";
+      display: inline-block;
+      width: 5px;
+      height: 22px;
+      background: var(--gradient-primary);
+      border-radius: 4px;
+    }
+
+    ul, ol {
+      padding-left: 22px;
+      margin-bottom: 12px;
+    }
+
+    li {
+      margin-bottom: 8px;
+      color: var(--text-secondary);
+      line-height: 1.6;
+    }
+
+    a {
+      color: var(--brand-blue);
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Decorative Light Blobs -->
+  <div class="bg-blob bg-blob-1"></div>
+  <div class="bg-blob bg-blob-2"></div>
+
+  <!-- Navigation Bar -->
+  <header class="navbar-custom">
+    <div class="nav-container">
+      <a href="../index.html" class="nav-brand">
+        <img src="../assets/mainlogo1.png" alt="Erronix Logo" class="nav-logo-img">
+        <span class="nav-college-title">University College of Engineering Arni</span>
+      </a>
+
+      <a href="../index.html#events" class="btn-secondary" style="padding: 8px 18px; font-size: 0.9rem;">
+        &larr; Back to Events
+      </a>
+    </div>
+  </header>
+
+  <!-- Main Event Content -->
+  <main class="event-page-container">
+    
+    <!-- Hero Header -->
+    <div class="event-hero-card">
+      <span class="badge-tag badge-violet mb-2">Non-Technical Event</span>
+      <h1 style="font-size: 2.5rem; color: var(--primary-navy); margin-top: 8px;">Ballistic Bash</h1>
+      <p style="font-size: 1.1rem; color: var(--brand-violet); font-weight: 600;">PRECISION & BALANCE CONTEST</p>
+      
+      <div style="margin-top: 24px;">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeVVcMIacGliQJLwqJHbGX9MfFLpU1Rz8WBMtshO1jCIdKPGQ/viewform" 
+           target="_blank" rel="noopener noreferrer" class="btn-primary">
+          Register Now
+        </a>
+      </div>
+    </div>
+
+    <!-- About Section -->
+    <div class="event-section-card">
+      <h2 class="event-section-title">About the Event</h2>
+      <p style="color: var(--text-secondary); line-height: 1.7;">
+        Ballistic Bash is a thrilling non-technical event that tests participants’ balance, focus, and teamwork. 
+        Teams must carefully balance a ball on a pen and move from start to finish without dropping it. 
+        It’s a game of patience, precision, and coordination — one slip can send you back to the start!
+      </p>
+    </div>
+
+    <!-- Time & Venue -->
+    <div class="event-section-card">
+      <h2 class="event-section-title">Time & Venue</h2>
+      <p><b>Date:</b> 31/10/2025</p>
+      <p><b>Time:</b> 2.00 PM to 3.00 PM</p>
+      <p><b>Venue:</b> Will be updated soon.</p>
+    </div>
+
+    <!-- Event Rules & Guidelines -->
+    <div class="event-section-card">
+      <h2 class="event-section-title">Event Rules & Guidelines</h2>
+
+      <h3 style="font-size: 1.1rem; color: var(--primary-navy); margin-top: 14px; margin-bottom: 8px;">1. Teams and Players</h3>
+      <ul>
+        <li>A total of <b>five (5)</b> teams will participate in the event.</li>
+        <li>Each team shall consist of <b>three (3)</b> players.</li>
+        <li>All teams will be provided with an equal opportunity to participate.</li>
+      </ul>
+
+      <h3 style="font-size: 1.1rem; color: var(--primary-navy); margin-top: 14px; margin-bottom: 8px;">2. Equipment: Balls and Pens</h3>
+      <ul>
+        <li>Each team will be provided with <b>five (5) balls</b>.</li>
+        <li>Each team member will receive <b>one (1) pen</b> to balance the ball.</li>
+        <li>Only the materials provided by the organizers may be used during the event.</li>
+      </ul>
+
+      <h3 style="font-size: 1.1rem; color: var(--primary-navy); margin-top: 14px; margin-bottom: 8px;">3. Throw and Aim Instructions</h3>
+      <ul>
+        <li>All team members must stand behind the <b>start line</b> before beginning.</li>
+        <li>Participants must balance the ball on the pen and move carefully from the start line to the end line.</li>
+        <li>If the ball falls to the ground at any point, the team must <b>restart</b> from the start line.</li>
+        <li>Crossing the start line before beginning or during the attempt will result in a restart or disqualification as determined by the judges.</li>
+      </ul>
+
+      <h3 style="font-size: 1.1rem; color: var(--primary-navy); margin-top: 14px; margin-bottom: 8px;">4. Time Limit</h3>
+      <ul>
+        <li>Each team must complete their attempt within <b>three (3) minutes</b>.</li>
+      </ul>
+
+      <h3 style="font-size: 1.1rem; color: var(--primary-navy); margin-top: 14px; margin-bottom: 8px;">5. Winning Criteria</h3>
+      <ul>
+        <li>A successful attempt is counted when the ball is balanced and transferred completely from the start line to the end line without falling.</li>
+        <li>The team that completes the task first will be declared the winner (<b>first come, first serve</b> basis).</li>
+        <li>The judges’ and coordinators’ decisions are <b>final and binding</b> on all participants.</li>
+      </ul>
+
+      <h3 style="font-size: 1.1rem; color: var(--primary-navy); margin-top: 14px; margin-bottom: 8px;">6. Key Rules to Remember</h3>
+      <ul>
+        <li>Do not cross the start line during the attempt.</li>
+        <li>Use only the balls and pens provided by the event coordinators.</li>
+        <li>Hands must not be used to support or balance the ball at any time.</li>
+        <li>Any violation of the rules will result in disqualification.</li>
+      </ul>
+    </div>
+
+    <!-- Rewards & Recognition -->
+    <div class="event-section-card">
+      <h2 class="event-section-title">Rewards & Recognition</h2>
+      <ul>
+        <li>Exciting prizes are waiting for participants who showcase exceptional balance, teamwork, and creativity.</li>
+      </ul>
+    </div>
+
+    <!-- Student Coordinators -->
+    <div class="event-section-card">
+      <h2 class="event-section-title">Student Coordinators</h2>
+      <ul>
+        <li>Srinithi K</li>
+        <li>Vinothkumar – <a href="tel:+918098262103">+91 80982 62103</a></li>
+      </ul>
+      <p style="margin-top: 10px; color: var(--text-muted);">
+        For any event or registration-related queries, feel free to reach out to the coordinators.
+      </p>
+    </div>
+
+    <!-- CTA Register -->
+    <div style="text-align: center; margin-top: 40px;">
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSeVVcMIacGliQJLwqJHbGX9MfFLpU1Rz8WBMtshO1jCIdKPGQ/viewform" 
+         target="_blank" rel="noopener noreferrer" class="btn-primary" style="padding: 14px 36px; font-size: 1.1rem;">
+        Register Now
+      </a>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer style="text-align: center; padding: 40px 20px; border-top: 1px solid var(--border-light); background: var(--bg-surface); margin-top: 60px;">
+    <p style="color: var(--text-secondary); font-size: 0.95rem;">
+      &copy; 2026 Erronix. All Rights Reserved. | Department of Computer Science and Engineering
+    </p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Epic Frames — Wireframing | Erronix 2K26</title>
+  <link rel="icon" type="image/x-icon" href="../assets/weblogofinal.png">
+  <link rel="stylesheet" href="../assets/css/design-system.css">
+  
+  <style>
+    .event-page-container {
+      max-width: 980px;
+      margin: 110px auto 60px auto;
+      padding: 0 20px;
+    }
+
+    .event-hero-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-xl);
+      padding: 40px;
+      box-shadow: var(--shadow-md);
+      margin-bottom: 32px;
+      text-align: center;
+    }
+
+    .event-section-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-lg);
+      padding: 28px 32px;
+      box-shadow: var(--shadow-sm);
+      margin-bottom: 24px;
+      transition: border-color var(--transition-fast);
+    }
+
+    .event-section-card:hover {
+      border-color: var(--border-accent);
+    }
+
+    .event-section-title {
+      font-size: 1.35rem;
+      color: var(--primary-navy);
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .event-section-title::before {
+      content: "";
+      display: inline-block;
+      width: 5px;
+      height: 22px;
+      background: var(--gradient-primary);
+      border-radius: 4px;
+    }
+
+    ul, ol {
+      padding-left: 22px;
+      margin-bottom: 12px;
+    }
+
+    li {
+      margin-bottom: 8px;
+      color: var(--text-secondary);
+      line-height: 1.6;
+    }
+
+    a {
+      color: var(--brand-blue);
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Decorative Light Blobs -->
+  <div class="bg-blob bg-blob-1"></div>
+  <div class="bg-blob bg-blob-2"></div>
+
+  <!-- Navigation Bar -->
+  <header class="navbar-custom">
+    <div class="nav-container">
+      <a href="../index.html" class="nav-brand">
+        <img src="../assets/mainlogo1.png" alt="Erronix Logo" class="nav-logo-img">
+        <span class="nav-college-title">University College of Engineering Arni</span>
+      </a>
+
+      <a href="../index.html#events" class="btn-secondary" style="padding: 8px 18px; font-size: 0.9rem;">
+        &larr; Back to Events
+      </a>
+    </div>
+  </header>
+
+  <!-- Main Event Content -->
+  <main class="event-page-container">
+    
+    <!-- Hero Header -->
+    <div class="event-hero-card">
+      <span class="badge-tag mb-2">Technical Event</span>
+      <h1 style="font-size: 2.5rem; color: var(--primary-navy); margin-top: 8px;">Epic Frames</h1>
+      <p style="font-size: 1.1rem; color: var(--brand-blue); font-weight: 600;">WIREFRAMING CONTEST</p>
+      
+      <div style="margin-top: 24px;">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeVVcMIacGliQJLwqJHbGX9MfFLpU1Rz8WBMtshO1jCIdKPGQ/viewform" 
+           target="_blank" rel="noopener noreferrer" class="btn-primary">
+          Register Now
+        </a>
+      </div>
+    </div>
+
+    <!-- About Section -->
+    <div class="event-section-card">
+      <h2 class="event-section-title">About the Event</h2>
+      <p style="color: var(--text-secondary); line-height: 1.7;">
+        Epic Frames is a creative wireframing competition where participants showcase their UI/UX design skills 
+        by creating wireframes for an on-the-spot topic. The contest emphasizes problem-solving, clarity, usability, 
+        and innovation in design, testing participants’ ability to convert abstract ideas into effective digital blueprints.
+      </p>
+    </div>
+
+    <!-- Event Schedule -->
+    <div class="event-section-card">
+      <h2 class="event-section-title">Event Schedule</h2>
+      <ul>
+        <li><b>Date:</b> 31th October 2025</li>
+        <li><b>Time:</b> 11.00 PM to 12.00 PM</li>
+        <li><b>Venue:</b> Will be updated soon</li>
+      </ul>
+    </div>
+
+    <!-- Category & Participation -->
+    <div class="event-section-card">
+      <h2 class="event-section-title">Category & Participation</h2>
+      <ul>
+        <li><b>Category/Theme:</b> UI/UX Design, Wireframing</li>
+        <li><b>Participation:</b> Individual (first-come-first-serve)</li>
+      </ul>
+    </div>
+
+    <!-- Registration & Prerequisites -->
+    <div class="event-section-card">
+      <h2 class="event-section-title">Registration & Prerequisites</h2>
+      <ul>
+        <li>Registration Process: Online / First-come, first-served (No on spot registration).</li>
+        <li>Registration Deadline: <b>29/10/2025</b>.</li>
+        <li>Prerequisite: Valid college ID card for verification</li>
+      </ul>
+    </div>
+
+    <!-- Rules & Guidelines -->
+    <div class="event-section-card">
+      <h2 class="event-section-title">Event Rules & Guidelines</h2>
+      <p style="font-weight: 600; color: var(--primary-navy); margin-bottom: 8px;">General Rules:</p>
+      <ul>
+        <li>Must carry a valid college ID card.</li>
+        <li>Only original work is allowed; plagiarism will lead to disqualification.</li>
+        <li>Judges’ decisions are final.</li>
+        <li>Maintain decorum throughout the event.</li>
+      </ul>
+
+      <p style="font-weight: 600; color: var(--brand-blue); margin-top: 16px; margin-bottom: 8px;">Specific Rules:</p>
+      <ul>
+        <li>Design tool: <b>Figma</b> (no plugins, AI tools, or external templates allowed).</li>
+        <li>Topic/question will be given on the spot (same for all participants).</li>
+        <li>Wireframe must solve or support the scenario/problem described in the question.</li>
+        <li>Participants must use only the Gmail account provided on the event system for Figma access.</li>
+        <li>Design must be for <b>mobile view</b> only (not desktop or tablet).</li>
+        <li>Page Limit: Minimum 2 pages, maximum 3 pages.</li>
+        <li>Do NOT use sample templates or copy designs from other sources.</li>
+        <li>No preview designs will be provided; design must be created from scratch.</li>
+        <li>All submissions must be shared via the Google Form provided during the event.</li>
+        <li>Electronic devices (smartphones, smartwatches, etc.) are strictly prohibited unless part of the event system.</li>
+      </ul>
+
+      <p style="font-weight: 600; color: var(--primary-navy); margin-top: 16px; margin-bottom: 8px;">Evaluation Criteria:</p>
+      <ul>
+        <li>How well the design meets the given problem and requirements.</li>
+        <li>Creativity, innovation, and overall presentation of the wireframe.</li>
+        <li>Clarity, consistency, and usability of the design flow between screens.</li>
+        <li>Visual aesthetics, alignment, spacing, and overall design quality.</li>
+      </ul>
+
+      <p style="font-weight: 600; color: var(--brand-blue); margin-top: 16px; margin-bottom: 8px;">Submission:</p>
+      <ul>
+        <li>Final Figma file link must be submitted using the Google Form shared with participants.</li>
+        <li>Ensure your Figma design uses only the Gmail account provided on the event system.</li>
+      </ul>
+    </div>
+
+    <!-- Event Flow -->
+    <div class="event-section-card">
+      <h2 class="event-section-title">Event Flow & Time Allocation</h2>
+      <ul>
+        <li>Design Time: 40–45 minutes</li>
+        <li>Evaluation Time: 15 minutes</li>
+        <li>Number of Rounds: Single round (on-the-spot wireframe design)</li>
+      </ul>
+    </div>
+
+    <!-- Rewards & Recognition -->
+    <div class="event-section-card">
+      <h2 class="event-section-title">Rewards & Recognition</h2>
+      <ul>
+        <li>All participants will receive a <b>Participation Certificate</b>.</li>
+        <li><b>Winners and Runners-up</b> will be awarded special prizes in recognition of their outstanding performance.</li>
+      </ul>
+    </div>
+
+    <!-- Code of Conduct -->
+    <div class="event-section-card">
+      <h2 class="event-section-title">Code of Conduct</h2>
+      <ul>
+        <li>Be punctual and arrive 10 minutes before the event.</li>
+        <li>Follow instructions given by coordinators.</li>
+        <li>Any misbehaviour, cheating, or violation of rules will lead to disqualification.</li>
+      </ul>
+    </div>
+
+    <!-- Contact Info -->
+    <div class="event-section-card">
+      <h2 class="event-section-title">Contact Information</h2>
+      <p><b>Event Coordinators:</b></p>
+      <ul>
+        <li>Iniya - <a href="tel:+918807276094">+91 88072 76094</a></li>
+        <li>Ramesh Kumar - <a href="tel:+919345266375">+91 93452 66375</a></li>
+      </ul>
+    </div>
+
+    <!-- CTA Register -->
+    <div style="text-align: center; margin-top: 40px;">
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSeVVcMIacGliQJLwqJHbGX9MfFLpU1Rz8WBMtshO1jCIdKPGQ/viewform" 
+         target="_blank" rel="noopener noreferrer" class="btn-primary" style="padding: 14px 36px; font-size: 1.1rem;">
+        Register Now
+      </a>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer style="text-align: center; padding: 40px 20px; border-top: 1px solid var(--border-light); background: var(--bg-surface); margin-top: 60px;">
+    <p style="color: var(--text-secondary); font-size: 0.95rem;">
+      &copy; 2026 Erronix. All Rights Reserved. | Department of Computer Science and Engineering
+    </p>
+  </footer>
+</body>
+</html>

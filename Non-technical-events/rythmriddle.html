@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rhythm Riddle | Erronix 2K26</title>
+  <link rel="icon" type="image/x-icon" href="../assets/weblogofinal.png">
+  <link rel="stylesheet" href="../assets/css/design-system.css">
+  
+  <style>
+    .event-page-container {
+      max-width: 980px;
+      margin: 110px auto 60px auto;
+      padding: 0 20px;
+    }
+
+    .event-hero-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-xl);
+      padding: 40px;
+      box-shadow: var(--shadow-md);
+      margin-bottom: 32px;
+      text-align: center;
+    }
+
+    .event-section-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-lg);
+      padding: 28px 32px;
+      box-shadow: var(--shadow-sm);
+      margin-bottom: 24px;
+      transition: border-color var(--transition-fast);
+    }
+
+    .event-section-card:hover {
+      border-color: var(--border-accent);
+    }
+
+    .event-section-title {
+      font-size: 1.35rem;
+      color: var(--primary-navy);
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .event-section-title::before {
+      content: "";
+      display: inline-block;
+      width: 5px;
+      height: 22px;
+      background: var(--gradient-primary);
+      border-radius: 4px;
+    }
+
+    ul, ol {
+      padding-left: 22px;
+      margin-bottom: 12px;
+    }
+
+    li {
+      margin-bottom: 8px;
+      color: var(--text-secondary);
+      line-height: 1.6;
+    }
+
+    a {
+      color: var(--brand-blue);
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Decorative Light Blobs -->
+  <div class="bg-blob bg-blob-1"></div>
+  <div class="bg-blob bg-blob-2"></div>
+
+  <!-- Navigation Bar -->
+  <header class="navbar-custom">
+    <div class="nav-container">
+      <a href="../index.html" class="nav-brand">
+        <img src="../assets/mainlogo1.png" alt="Erronix Logo" class="nav-logo-img">
+        <span class="nav-college-title">University College of Engineering Arni</span>
+      </a>
+
+      <a href="../index.html#events" class="btn-secondary" style="padding: 8px 18px; font-size: 0.9rem;">
+        &larr; Back to Events
+      </a>
+    </div>
+  </header>
+
+  <!-- Main Event Content -->
+  <main class="event-page-container">
+    
+    <!-- Hero Header -->
+    <div class="event-hero-card">
+      <span class="badge-tag badge-violet mb-2">Non-Technical Event</span>
+      <h1 style="font-size: 2.5rem; color: var(--primary-navy); margin-top: 8px;">Rhythm Riddle</h1>
+      <p style="font-size: 1.1rem; color: var(--brand-violet); font-weight: 600;">MUSICAL & RHYTHMIC PUZZLE CONTEST</p>
+      
+      <div style="margin-top: 24px;">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeVVcMIacGliQJLwqJHbGX9MfFLpU1Rz8WBMtshO1jCIdKPGQ/viewform" 
+           target="_blank" rel="noopener noreferrer" class="btn-primary">
+          Register Now
+        </a>
+      </div>
+    </div>
+
+    <!-- About Section -->
+    <div class="event-section-card">
+      <h2 class="event-section-title">About the Event</h2>
+      <p style="color: var(--text-secondary); line-height: 1.7;">
+        Rhythm Riddle is an exciting non-technical event where participants solve musical and rhythmic puzzles. 
+        Test your timing, logic, and problem-solving skills while keeping the beat in this engaging challenge.
+      </p>
+    </div>
+
+    <!-- Time & Venue -->
+    <div class="event-section-card">
+      <h2 class="event-section-title">Time & Venue</h2>
+      <p><b>Date:</b> 31/10/2025</p>
+      <p><b>Time:</b> 2.00 PM to 3.00 PM</p>
+      <p><b>Venue:</b> Will be updated soon.</p>
+    </div>
+
+    <!-- Teams & Format -->
+    <div class="event-section-card">
+      <h2 class="event-section-title">Teams & Format</h2>
+      <ul>
+        <li>Each team may have a maximum of <b>3 members</b>.</li>
+        <li>The contest consists of <b>three rounds</b>.</li>
+      </ul>
+    </div>
+
+    <!-- Rounds -->
+    <div class="event-section-card">
+      <h2 class="event-section-title">Rounds</h2>
+      <ol>
+        <li><b>Round 1 – Speaker Box:</b> Teams listen to short soundtrack clips and identify the song.</li>
+        <li><b>Round 2 – Bioscope:</b> Teams identify songs from images shown on screen.</li>
+        <li><b>Round 3 – Guess the Missing Words:</b> Teams identify the missing word(s) from a displayed lyric.</li>
+      </ol>
+    </div>
+
+    <!-- Time Rules -->
+    <div class="event-section-card">
+      <h2 class="event-section-title">Time Rules</h2>
+      <ul>
+        <li>Each round lasts a maximum of <b>15 minutes</b>.</li>
+        <li>Each round consists of <b>7 songs/questions</b>.</li>
+        <li>For each song/question, the time limit to answer is <b>1 minute</b>.</li>
+      </ul>
+    </div>
+
+    <!-- How to Answer -->
+    <div class="event-section-card">
+      <h2 class="event-section-title">How to Answer</h2>
+      <ul>
+        <li>Teams must press the horn/buzzer before answering.</li>
+        <li>Only the team that buzzes may answer that item.</li>
+        <li>If a team gives a wrong answer, they forfeit any further attempts for the remaining items in that same round.</li>
+      </ul>
+    </div>
+
+    <!-- Result & Prize -->
+    <div class="event-section-card">
+      <h2 class="event-section-title">Result & Prize</h2>
+      <ul>
+        <li>A total of <b>21 songs</b> will be played in the entire contest.</li>
+        <li>Based on performance, the top three teams will be selected and awarded prizes.</li>
+        <li>Final decision will be based on <b>points scored</b> by each team.</li>
+      </ul>
+    </div>
+
+    <!-- Final Notes -->
+    <div class="event-section-card">
+      <h2 class="event-section-title">Final Notes</h2>
+      <ul>
+        <li>Organizers’ decisions are final.</li>
+        <li>Play fair and respect time limits announced during the event.</li>
+      </ul>
+    </div>
+
+    <!-- Rewards & Recognition -->
+    <div class="event-section-card">
+      <h2 class="event-section-title">Rewards & Recognition</h2>
+      <ul>
+        <li>Exciting prizes are waiting for participants who showcase exceptional talent and creativity.</li>
+      </ul>
+    </div>
+
+    <!-- Student Coordinators -->
+    <div class="event-section-card">
+      <h2 class="event-section-title">Student Coordinators</h2>
+      <ul>
+        <li>Priyadharshini N - <a href="tel:+919384507515">+91 93845 07515</a></li>
+        <li>Shanmugasundaram - <a href="tel:+918838594473">+91 88385 94473</a></li>
+      </ul>
+      <p style="margin-top: 10px; color: var(--text-muted);">
+        For any event or registration-related queries, feel free to reach out to the coordinators.
+      </p>
+    </div>
+
+    <!-- CTA Register -->
+    <div style="text-align: center; margin-top: 40px;">
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSeVVcMIacGliQJLwqJHbGX9MfFLpU1Rz8WBMtshO1jCIdKPGQ/viewform" 
+         target="_blank" rel="noopener noreferrer" class="btn-primary" style="padding: 14px 36px; font-size: 1.1rem;">
+        Register Now
+      </a>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer style="text-align: center; padding: 40px 20px; border-top: 1px solid var(--border-light); background: var(--bg-surface); margin-top: 60px;">
+    <p style="color: var(--text-secondary); font-size: 0.95rem;">
+      &copy; 2026 Erronix. All Rights Reserved. | Department of Computer Science and Engineering
+    </p>
+  </footer>
+</body>
+</html>

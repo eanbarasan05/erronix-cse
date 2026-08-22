@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Past Season Highlights — Erronix 2K26</title>
+  <link rel="icon" type="image/x-icon" href="../assets/weblogofinal.png">
+  <link rel="stylesheet" href="assets/css/design-system.css">
+  
+  <style>
+    .past-season-hero {
+      padding: 130px 20px 60px 20px;
+      text-align: center;
+      max-width: 960px;
+      margin: 0 auto;
+    }
+
+    .video-wrapper-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-lg);
+      margin-top: 30px;
+      padding: 16px;
+    }
+
+    .video-wrapper-card video {
+      width: 100%;
+      height: auto;
+      border-radius: var(--radius-md);
+      display: block;
+      background: #000;
+    }
+
+    .counter-light-section {
+      background: var(--gradient-soft);
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-xl);
+      padding: 60px 30px;
+      text-align: center;
+      max-width: 700px;
+      margin: 60px auto;
+      box-shadow: var(--shadow-md);
+    }
+
+    .counter-value {
+      font-family: var(--font-heading);
+      font-size: 4.5rem;
+      font-weight: 800;
+      color: var(--brand-blue);
+      line-height: 1;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Decorative Light Blobs -->
+  <div class="bg-blob bg-blob-1"></div>
+  <div class="bg-blob bg-blob-2"></div>
+
+  <!-- Navigation Bar -->
+  <header class="navbar-custom">
+    <div class="nav-container">
+      <a href="index.html" class="nav-brand">
+        <img src="assets/mainlogo1.png" alt="Erronix Logo" class="nav-logo-img">
+        <span class="nav-college-title">University College of Engineering Arni</span>
+      </a>
+
+      <div style="display: flex; gap: 12px; align-items: center;">
+        <a href="index.html" class="btn-secondary" style="padding: 8px 18px; font-size: 0.9rem;">
+          &larr; Back to Home
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Past Season Main Content -->
+  <main class="past-season-hero">
+    <span class="badge-tag badge-violet mb-2">Historical Showcase</span>
+    <h1 style="font-size: 2.8rem; color: var(--primary-navy); margin-top: 12px;">Ananta Bodha 2k24</h1>
+    <p style="font-size: 1.2rem; color: var(--brand-blue); font-weight: 600; margin-bottom: 16px;">Past Season Highlights</p>
+    
+    <p style="font-size: 1.05rem; color: var(--text-secondary); max-width: 780px; margin: 0 auto; line-height: 1.7;">
+      Ananta Bodha was a spectacular event filled with exciting technical and non-technical competitions, workshops, and interactive sessions. Participants showcased their creativity, problem-solving skills, and teamwork. Relive the moments of innovation, learning, and fun from this past season.
+    </p>
+
+    <!-- Video Showcase Card -->
+    <div class="video-wrapper-card">
+      <video controls poster="assets/mainlogo.png">
+        <source src="assets/past season.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+      </video>
+    </div>
+
+    <!-- Participant Counter Section -->
+    <section class="counter-light-section" id="counterSection">
+      <span class="badge-tag">Participation Record</span>
+      <h2 style="font-size: 1.8rem; color: var(--primary-navy); margin-top: 12px;">Overall Participants of Past Seasons</h2>
+      <div class="counter-value" id="countNumber">0</div>
+      <p style="color: var(--text-muted); font-size: 0.95rem; margin-top: 8px;">Active engineering delegates & competitors</p>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer style="text-align: center; padding: 40px 20px; border-top: 1px solid var(--border-light); background: var(--bg-surface);">
+    <p style="color: var(--text-secondary); font-size: 0.95rem;">
+      &copy; 2026 Erronix 2K25 | All rights reserved
+    </p>
+  </footer>
+
+  <script>
+    // Count-up animation logic
+    let counted = false;
+
+    function animateCountUp(element, target, duration) {
+      let start = 0;
+      const stepTime = Math.max(10, Math.floor(duration / target));
+
+      const counter = setInterval(() => {
+        start++;
+        element.textContent = start + "+";
+        if (start >= target) clearInterval(counter);
+      }, stepTime);
+    }
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting && !counted) {
+          counted = true;
+          const counterEl = document.getElementById("countNumber");
+          animateCountUp(counterEl, 226, 2000);
+        }
+      });
+    }, { threshold: 0.5 });
+
+    observer.observe(document.getElementById("counterSection"));
+  </script>
+</body>
+</html>

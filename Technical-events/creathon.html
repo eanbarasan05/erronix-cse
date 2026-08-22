@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Creathon — Project Expo | Erronix 2K26</title>
+  <link rel="icon" type="image/x-icon" href="../assets/weblogofinal.png">
+  <link rel="stylesheet" href="../assets/css/design-system.css">
+  
+  <style>
+    .event-page-container {
+      max-width: 980px;
+      margin: 110px auto 60px auto;
+      padding: 0 20px;
+    }
+
+    .event-hero-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-xl);
+      padding: 40px;
+      box-shadow: var(--shadow-md);
+      margin-bottom: 32px;
+      text-align: center;
+    }
+
+    .event-section-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-lg);
+      padding: 28px 32px;
+      box-shadow: var(--shadow-sm);
+      margin-bottom: 24px;
+      transition: border-color var(--transition-fast);
+    }
+
+    .event-section-card:hover {
+      border-color: var(--border-accent);
+    }
+
+    .event-section-title {
+      font-size: 1.35rem;
+      color: var(--primary-navy);
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .event-section-title::before {
+      content: "";
+      display: inline-block;
+      width: 5px;
+      height: 22px;
+      background: var(--gradient-primary);
+      border-radius: 4px;
+    }
+
+    .important-topic-box {
+      background: var(--gradient-soft);
+      border: 1px solid rgba(37, 99, 235, 0.2);
+      border-radius: var(--radius-lg);
+      padding: 28px;
+      margin: 28px 0;
+    }
+
+    ul, ol {
+      padding-left: 22px;
+      margin-bottom: 12px;
+    }
+
+    li {
+      margin-bottom: 8px;
+      color: var(--text-secondary);
+      line-height: 1.6;
+    }
+
+    a {
+      color: var(--brand-blue);
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Decorative Light Blobs -->
+  <div class="bg-blob bg-blob-1"></div>
+  <div class="bg-blob bg-blob-2"></div>
+
+  <!-- Navigation Bar -->
+  <header class="navbar-custom">
+    <div class="nav-container">
+      <a href="../index.html" class="nav-brand">
+        <img src="../assets/mainlogo1.png" alt="Erronix Logo" class="nav-logo-img">
+        <span class="nav-college-title">University College of Engineering Arni</span>
+      </a>
+
+      <a href="../index.html#events" class="btn-secondary" style="padding: 8px 18px; font-size: 0.9rem;">
+        &larr; Back to Events
+      </a>
+    </div>
+  </header>
+
+  <!-- Main Event Content -->
+  <main class="event-page-container">
+    
+    <!-- Hero Header -->
+    <div class="event-hero-card">
+      <span class="badge-tag mb-2">Technical Event</span>
+      <h1 style="font-size: 2.5rem; color: var(--primary-navy); margin-top: 8px;">Creathon</h1>
+      <p style="font-size: 1.1rem; color: var(--brand-blue); font-weight: 600;">PROJECT EXPO</p>
+      
+      <div style="margin-top: 24px;">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeVVcMIacGliQJLwqJHbGX9MfFLpU1Rz8WBMtshO1jCIdKPGQ/viewform" 
+           target="_blank" rel="noopener noreferrer" class="btn-primary">
+          Register Now
+        </a>
+      </div>
+    </div>
+
+    <!-- About Section -->
+    <div class="event-section-card">
+      <h2 class="event-section-title">About the Event</h2>
+      <p style="color: var(--text-secondary); line-height: 1.7;">
+        Creathon is a competitive project exhibition where participants showcase innovative ideas and working prototypes in computer science and technology. 
+        It provides a platform for students to demonstrate creativity, technical expertise, and problem-solving skills to a panel of judges and an enthusiastic audience.
+      </p>
+    </div>
+
+    <!-- Event Schedule -->
+    <div class="event-section-card">
+      <h2 class="event-section-title">Event Schedule</h2>
+      <ul>
+        <li><b>Date:</b> 31th October 2025</li>
+        <li><b>Time:</b> 11.00 AM to 1.00 PM</li>
+        <li><b>Venue:</b> Will be updated soon</li>
+      </ul>
+    </div>
+
+    <!-- Event Overview -->
+    <div class="event-section-card">
+      <h2 class="event-section-title">Event Overview</h2>
+      <ul>
+        <li><b>Event Name:</b> Creathon – Project Expo</li>
+        <li><b>Team Size:</b> Solo or maximum of 4 members</li>
+      </ul>
+    </div>
+
+    <!-- Registration & Submission -->
+    <div class="event-section-card">
+      <h2 class="event-section-title">Registration & Submission</h2>
+      <ul>
+        <li><b>Project Document (Mini-Report) Submission Deadline:</b> 28/10/2025</li>
+        <li><b>Evaluation Announcement (Shortlisting):</b> 29/10/2025</li>
+        <li><b>Registration Closes:</b> 29/10/2025</li>
+        <li><b>Prerequisite:</b> Participants must submit a Project Document (mini-report) for evaluation before the expo.</li>
+        <li>Send a single email to <a href="mailto:erronixcse@gmail.com">erronixcse@gmail.com</a> including:
+          <ul>
+            <li>Scanned copy of your college ID card(s) for verification.</li>
+            <li>Your mini-report (Project Document) as an attachment.</li>
+          </ul>
+        </li>
+        <li>Use the subject line: <b>“Creathon (Project Expo) – Mini-Report Submission and ID Verification”</b>.</li>
+        <li>Individual participants should include their own ID; teams must include all members’ IDs in the same email.</li>
+        <li>Ensure that your mini-report follows the required format before submission.</li>
+        <li>Download the Mini-Report format template <a href="https://drive.google.com/file/d/1pAtuzrt-1FH9RBideHmgKvwmCSAURqqk/view?usp=sharing" target="_blank">here</a>.</li>
+      </ul>
+    </div>
+
+    <!-- Rules & Regulations -->
+    <div class="event-section-card">
+      <h2 class="event-section-title">Rules & Regulations</h2>
+      <ul>
+        <li>Projects must be the original work of the participants.</li>
+        <li>A working prototype must be ready for demonstration.</li>
+        <li>Participants must bring their own laptop and necessary equipment.</li>
+        <li>On the event day, participants should present:
+          <ul>
+            <li>A PPT Presentation</li>
+            <li>A Live Demonstration</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Event Flow -->
+    <div class="event-section-card">
+      <h2 class="event-section-title">Event Flow & Time Allocation</h2>
+      <ul>
+        <li><b>Total Time per Team:</b> 15 minutes
+          <ul>
+            <li>7 minutes – PPT Presentation</li>
+            <li>5 minutes – Project Demonstration</li>
+            <li>3 minutes – Q&amp;A with judges</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Rewards & Recognition -->
+    <div class="event-section-card">
+      <h2 class="event-section-title">Rewards & Recognition</h2>
+      <ul>
+        <li>All participants will receive a <b>Participation Certificate</b>.</li>
+        <li><b>Winners and Runners-up</b> will be awarded special prizes in recognition of their outstanding performance.</li>
+      </ul>
+    </div>
+
+    <!-- Code of Conduct -->
+    <div class="event-section-card">
+      <h2 class="event-section-title">Code of Conduct</h2>
+      <ul>
+        <li>Participants must report on time to the venue.</li>
+        <li>Maintain professionalism and decorum throughout the event.</li>
+        <li>Any violation of rules may lead to disqualification.</li>
+      </ul>
+    </div>
+
+    <!-- Suggested Topics -->
+    <div class="important-topic-box">
+      <h3 style="font-size: 1.25rem; color: var(--brand-violet); margin-bottom: 12px;">Suggested Domains & Topics</h3>
+      <ol>
+        <li>Artificial Intelligence & Machine Learning</li>
+        <li>GenAI</li>
+        <li>Data Science & Analytics</li>
+        <li>Cybersecurity & Networking</li>
+        <li>Computing Paradigms</li>
+        <li>Emerging Technologies</li>
+        <li>Human-Centric Computing</li>
+        <li>Hardware & Future Tech</li>
+        <li>Quantum Computing</li>
+        <li>Any other relevant technical topics</li>
+      </ol>
+    </div>
+
+    <!-- Contact Info -->
+    <div class="event-section-card">
+      <h2 class="event-section-title">Contact Information</h2>
+      <p><b>Event Coordinators:</b></p>
+      <ul>
+        <li>Dhivya – <a href="tel:+918015648675">+91 80156 48675</a></li>
+        <li>Jeswin Renish – <a href="tel:+918754846405">+91 87548 46405</a></li>
+      </ul>
+    </div>
+
+    <!-- CTA Register -->
+    <div style="text-align: center; margin-top: 40px;">
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSeVVcMIacGliQJLwqJHbGX9MfFLpU1Rz8WBMtshO1jCIdKPGQ/viewform" 
+         target="_blank" rel="noopener noreferrer" class="btn-primary" style="padding: 14px 36px; font-size: 1.1rem;">
+        Register Now
+      </a>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer style="text-align: center; padding: 40px 20px; border-top: 1px solid var(--border-light); background: var(--bg-surface); margin-top: 60px;">
+    <p style="color: var(--text-secondary); font-size: 0.95rem;">
+      &copy; 2026 Erronix. All Rights Reserved. | Department of Computer Science and Engineering
+    </p>
+  </footer>
+</body>
+</html>

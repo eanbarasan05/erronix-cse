@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ping-Pong-Throw | Erronix 2K26</title>
+  <link rel="icon" type="image/x-icon" href="../assets/weblogofinal.png">
+  <link rel="stylesheet" href="../assets/css/design-system.css">
+  
+  <style>
+    .event-page-container {
+      max-width: 980px;
+      margin: 110px auto 60px auto;
+      padding: 0 20px;
+    }
+
+    .event-hero-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-xl);
+      padding: 40px;
+      box-shadow: var(--shadow-md);
+      margin-bottom: 32px;
+      text-align: center;
+    }
+
+    .event-section-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-lg);
+      padding: 28px 32px;
+      box-shadow: var(--shadow-sm);
+      margin-bottom: 24px;
+      transition: border-color var(--transition-fast);
+    }
+
+    .event-section-card:hover {
+      border-color: var(--border-accent);
+    }
+
+    .event-section-title {
+      font-size: 1.35rem;
+      color: var(--primary-navy);
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .event-section-title::before {
+      content: "";
+      display: inline-block;
+      width: 5px;
+      height: 22px;
+      background: var(--gradient-primary);
+      border-radius: 4px;
+    }
+
+    ul, ol {
+      padding-left: 22px;
+      margin-bottom: 12px;
+    }
+
+    li {
+      margin-bottom: 8px;
+      color: var(--text-secondary);
+      line-height: 1.6;
+    }
+
+    a {
+      color: var(--brand-blue);
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Decorative Light Blobs -->
+  <div class="bg-blob bg-blob-1"></div>
+  <div class="bg-blob bg-blob-2"></div>
+
+  <!-- Navigation Bar -->
+  <header class="navbar-custom">
+    <div class="nav-container">
+      <a href="../index.html" class="nav-brand">
+        <img src="../assets/mainlogo1.png" alt="Erronix Logo" class="nav-logo-img">
+        <span class="nav-college-title">University College of Engineering Arni</span>
+      </a>
+
+      <a href="../index.html#events" class="btn-secondary" style="padding: 8px 18px; font-size: 0.9rem;">
+        &larr; Back to Events
+      </a>
+    </div>
+  </header>
+
+  <!-- Main Event Content -->
+  <main class="event-page-container">
+    
+    <!-- Hero Header -->
+    <div class="event-hero-card">
+      <span class="badge-tag badge-violet mb-2">Non-Technical Event</span>
+      <h1 style="font-size: 2.5rem; color: var(--primary-navy); margin-top: 8px;">Ping-Pong-Throw</h1>
+      <p style="font-size: 1.1rem; color: var(--brand-violet); font-weight: 600;">PRECISION TARGET GAME</p>
+      
+      <div style="margin-top: 24px;">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeVVcMIacGliQJLwqJHbGX9MfFLpU1Rz8WBMtshO1jCIdKPGQ/viewform" 
+           target="_blank" rel="noopener noreferrer" class="btn-primary">
+          Register Now
+        </a>
+      </div>
+    </div>
+
+    <!-- About Section -->
+    <div class="event-section-card">
+      <h2 class="event-section-title">About the Event</h2>
+      <p style="color: var(--text-secondary); line-height: 1.7;">
+        Ping-Pong-Throw is a fun-filled, skill-testing event where participants showcase their accuracy, 
+        speed, and coordination. Compete against others in a series of challenges that test your precision 
+        in throwing ping-pong balls into designated targets. This event is designed to be thrilling and 
+        entertaining for both players and spectators.
+      </p>
+    </div>
+
+    <!-- Time & Venue -->
+    <div class="event-section-card">
+      <h2 class="event-section-title">Time & Venue</h2>
+      <p><b>Date:</b> 31/10/2025</p>
+      <p><b>Time:</b> 11.00 AM to 12.00 PM</p>
+      <p><b>Venue:</b> Will be updated soon.</p>
+    </div>
+
+    <!-- Event Rules and Guidelines -->
+    <div class="event-section-card">
+      <h2 class="event-section-title">Event Rules and Guidelines</h2>
+
+      <h3 style="font-size: 1.1rem; color: var(--primary-navy); margin-top: 14px; margin-bottom: 8px;">1. Teams and Players</h3>
+      <ul>
+        <li>A total of five (5) teams will participate in the event.</li>
+        <li>Each team shall consist of three (3) members.</li>
+        <li>All teams will be given equal opportunity to participate.</li>
+      </ul>
+
+      <h3 style="font-size: 1.1rem; color: var(--primary-navy); margin-top: 14px; margin-bottom: 8px;">2. Equipment: Balls and Bowls</h3>
+      <ul>
+        <li>Each team will be provided with twelve (12) ping pong balls.</li>
+        <li>Three (3) bowls filled with water will be placed on a table at a fixed distance.</li>
+        <li>Only the materials provided by the organizers may be used during the event.</li>
+      </ul>
+
+      <h3 style="font-size: 1.1rem; color: var(--primary-navy); margin-top: 14px; margin-bottom: 8px;">3. Throw and Aim Instructions</h3>
+      <ul>
+        <li>All team members must stand behind the throwing line before starting.</li>
+        <li>Each player will take turns to throw the balls one at a time.</li>
+        <li>Each player must attempt to throw until at least one ball successfully reaches the bowl.</li>
+        <li>The goal is to land the ping pong balls into the water-filled bowls.</li>
+        <li>If a player crosses the throwing line or throws multiple balls together, that throw will not be counted.</li>
+        <li>Balls that bounce out of the bowl will not be considered successful.</li>
+      </ul>
+
+      <h3 style="font-size: 1.1rem; color: var(--primary-navy); margin-top: 14px; margin-bottom: 8px;">4. Time Limit</h3>
+      <ul>
+        <li>Each team will be given one (1) minute to complete their turn.</li>
+        <li>All throws must be completed within the given time limit.</li>
+      </ul>
+
+      <h3 style="font-size: 1.1rem; color: var(--primary-navy); margin-top: 14px; margin-bottom: 8px;">5. Winning Criteria</h3>
+      <ul>
+        <li>A throw is considered successful when the ball lands in the bowl and stays inside.</li>
+        <li>The team with the highest number of successful throws within the time limit will be declared the winner.</li>
+        <li>In case of a tie, an additional tiebreaker round may be conducted.</li>
+        <li>The judges’ and coordinators’ decisions are final and binding for all participants.</li>
+      </ul>
+
+      <h3 style="font-size: 1.1rem; color: var(--primary-navy); margin-top: 14px; margin-bottom: 8px;">6. Key Rules to Remember</h3>
+      <ul>
+        <li>Do not cross the throwing line during your turn.</li>
+        <li>Use only the balls and bowls provided by the organizers.</li>
+        <li>One ball per throw – no multiple throws at once.</li>
+        <li>All balls must reach the bowl within only one pitch (attempt).</li>
+        <li>Each player must throw until at least one ball reaches the bowl.</li>
+        <li>No bouncing or rolling throws unless specified.</li>
+        <li>No extra balls may be taken by players — it is strictly not allowed.</li>
+        <li>Maintain fair play and teamwork throughout the event.</li>
+      </ul>
+    </div>
+
+    <!-- General Guidelines -->
+    <div class="event-section-card">
+      <h2 class="event-section-title">General Guidelines</h2>
+      <ul>
+        <li>Respect the coordinators and follow all given instructions.</li>
+        <li>No cheating, tampering, or interference allowed.</li>
+        <li>Maintain fair play and sportsmanship throughout the event.</li>
+        <li>Judges’ and coordinators’ decisions are final.</li>
+      </ul>
+    </div>
+
+    <!-- Rewards & Recognition -->
+    <div class="event-section-card">
+      <h2 class="event-section-title">Rewards & Recognition</h2>
+      <ul>
+        <li>Exciting prizes are waiting for participants who showcase exceptional talent and creativity.</li>
+      </ul>
+    </div>
+
+    <!-- Student Coordinators -->
+    <div class="event-section-card">
+      <h2 class="event-section-title">Student Coordinators</h2>
+      <ul>
+        <li>Devi P</li>
+        <li>Balaji K – <a href="tel:+919655259112">+91 96552 59112</a></li>
+      </ul>
+      <p style="margin-top: 10px; color: var(--text-muted);">
+        For any event or registration-related queries, feel free to reach out to the coordinators.
+      </p>
+    </div>
+
+    <!-- CTA Register -->
+    <div style="text-align: center; margin-top: 40px;">
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSeVVcMIacGliQJLwqJHbGX9MfFLpU1Rz8WBMtshO1jCIdKPGQ/viewform" 
+         target="_blank" rel="noopener noreferrer" class="btn-primary" style="padding: 14px 36px; font-size: 1.1rem;">
+        Register Now
+      </a>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer style="text-align: center; padding: 40px 20px; border-top: 1px solid var(--border-light); background: var(--bg-surface); margin-top: 60px;">
+    <p style="color: var(--text-secondary); font-size: 0.95rem;">
+      &copy; 2026 Erronix. All Rights Reserved. | Department of Computer Science and Engineering
+    </p>
+  </footer>
+</body>
+</html>
