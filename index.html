@@ -1344,9 +1344,39 @@
 
     .marquee-wrapper {
       width: 100%;
-      overflow: hidden;
+      overflow-x: auto;
+      overflow-y: hidden;
       position: relative;
       padding: 16px 0 24px;
+      scroll-behavior: smooth;
+      -webkit-overflow-scrolling: touch;
+      cursor: grab;
+      user-select: none;
+      scrollbar-width: thin;
+      scrollbar-color: var(--brand-blue-light) rgba(0,0,0,0.05);
+    }
+
+    .marquee-wrapper:active {
+      cursor: grabbing;
+    }
+
+    .marquee-wrapper::-webkit-scrollbar {
+      height: 6px;
+    }
+
+    .marquee-wrapper::-webkit-scrollbar-track {
+      background: rgba(0, 0, 0, 0.04);
+      border-radius: var(--radius-full);
+      margin: 0 24px;
+    }
+
+    .marquee-wrapper::-webkit-scrollbar-thumb {
+      background: var(--brand-blue-light);
+      border-radius: var(--radius-full);
+    }
+
+    .marquee-wrapper::-webkit-scrollbar-thumb:hover {
+      background: var(--brand-blue);
     }
 
     .marquee-wrapper::before,
@@ -1385,7 +1415,9 @@
     }
 
     .marquee-wrapper:hover .marquee-track,
-    .marquee-wrapper:hover .marquee-track-reverse {
+    .marquee-wrapper:hover .marquee-track-reverse,
+    .marquee-wrapper:active .marquee-track,
+    .marquee-wrapper:active .marquee-track-reverse {
       animation-play-state: paused;
     }
 
@@ -2984,6 +3016,43 @@
         edcCard.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg) translateY(0px)';
       });
     }
+
+    /* ---- Event Card Rows Drag-to-Scroll & Wheel Scroll ---- */
+    const marqueeWrappers = document.querySelectorAll('.marquee-wrapper');
+    marqueeWrappers.forEach(wrapper => {
+      let isDown = false;
+      let startX;
+      let scrollLeft;
+
+      wrapper.addEventListener('mousedown', (e) => {
+        isDown = true;
+        startX = e.pageX - wrapper.offsetLeft;
+        scrollLeft = wrapper.scrollLeft;
+      });
+
+      wrapper.addEventListener('mouseleave', () => {
+        isDown = false;
+      });
+
+      wrapper.addEventListener('mouseup', () => {
+        isDown = false;
+      });
+
+      wrapper.addEventListener('mousemove', (e) => {
+        if (!isDown) return;
+        e.preventDefault();
+        const x = e.pageX - wrapper.offsetLeft;
+        const walk = (x - startX) * 2;
+        wrapper.scrollLeft = scrollLeft - walk;
+      });
+
+      // Enable horizontal scrolling with mouse wheel
+      wrapper.addEventListener('wheel', (e) => {
+        if (e.deltaY !== 0) {
+          wrapper.scrollLeft += e.deltaY;
+        }
+      }, { passive: true });
+    });
   </script>
 </body>
 
