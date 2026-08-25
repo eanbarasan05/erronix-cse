@@ -2070,6 +2070,147 @@
         padding: 20px 18px 16px;
       }
     }
+
+    /* =============================================
+       STAGGERED REVEAL - children
+    ============================================= */
+    .reveal-child {
+      opacity: 0;
+      transform: translateY(22px);
+      transition: opacity 0.55s cubic-bezier(0.4,0,0.2,1), transform 0.55s cubic-bezier(0.4,0,0.2,1);
+    }
+    .reveal-child.visible { opacity: 1; transform: translateY(0); }
+
+    /* =============================================
+       MOBILE NAV - animated slide/fade drawer
+    ============================================= */
+    @media (max-width: 768px) {
+      .nav-menu {
+        display: flex !important; /* override display:none; controlled by opacity/pointer-events */
+        flex-direction: column;
+        position: absolute;
+        top: 72px;
+        left: 0;
+        right: 0;
+        background: var(--bg-glass-strong);
+        backdrop-filter: blur(20px);
+        border-bottom: 1px solid var(--border-light);
+        padding: 16px 20px 24px;
+        gap: 4px;
+        box-shadow: var(--shadow-lg);
+        /* slide-in animation state */
+        opacity: 0;
+        transform: translateY(-8px);
+        pointer-events: none;
+        transition: opacity 0.28s cubic-bezier(0.4,0,0.2,1), transform 0.28s cubic-bezier(0.4,0,0.2,1);
+      }
+      .nav-menu.show {
+        opacity: 1;
+        transform: translateY(0);
+        pointer-events: auto;
+      }
+    }
+
+    /* Hamburger → X morph */
+    .mobile-toggle.open span:nth-child(1) {
+      transform: translateY(7px) rotate(45deg);
+    }
+    .mobile-toggle.open span:nth-child(2) {
+      opacity: 0;
+      transform: scaleX(0);
+    }
+    .mobile-toggle.open span:nth-child(3) {
+      transform: translateY(-7px) rotate(-45deg);
+    }
+
+    /* =============================================
+       BUTTON - active press scale + ripple shine
+    ============================================= */
+    .btn-primary-hero:active,
+    .btn-nav-register:active {
+      transform: scale(0.97) translateY(0) !important;
+    }
+    .btn-secondary-hero:active { transform: scale(0.97) translateY(0) !important; }
+    .btn-event:active { transform: scale(0.96) translateY(0) !important; }
+
+    /* Shine sweep on primary CTA */
+    .btn-primary-hero::after {
+      content: '';
+      position: absolute;
+      top: 0; left: -75%;
+      width: 50%; height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.28), transparent);
+      transform: skewX(-20deg);
+      transition: left 0.55s ease;
+      pointer-events: none;
+    }
+    .btn-primary-hero:hover::after { left: 130%; }
+
+    /* =============================================
+       COUNTDOWN - digit flip tick
+    ============================================= */
+    @keyframes digitTick {
+      0%   { transform: translateY(-18px); opacity: 0; }
+      100% { transform: translateY(0);     opacity: 1; }
+    }
+    .flip-value.tick {
+      animation: digitTick 0.28s cubic-bezier(0.34,1.56,0.64,1) both;
+    }
+
+    /* Seconds box pulse glow */
+    @keyframes secondsPulse {
+      0%,100% { box-shadow: var(--shadow-md); }
+      50%      { box-shadow: var(--shadow-md), 0 0 22px rgba(29,95,219,0.32); }
+    }
+    .time-card.seconds-glow {
+      animation: secondsPulse 1s ease-in-out;
+    }
+
+    /* =============================================
+       COORDINATOR - avatar pulse ring
+    ============================================= */
+    .coordinator-avatar {
+      position: relative;
+    }
+    .coordinator-avatar::after {
+      content: '';
+      position: absolute;
+      inset: -4px;
+      border-radius: 50%;
+      border: 2px solid rgba(29,95,219,0.3);
+      animation: avatarRing 2.6s ease-in-out infinite;
+    }
+    @keyframes avatarRing {
+      0%,100% { transform: scale(1);   opacity: 0.7; }
+      50%      { transform: scale(1.12); opacity: 0; }
+    }
+
+    /* =============================================
+       SPONSORS - edge fade mask
+    ============================================= */
+    .sponsor-marquee {
+      -webkit-mask-image: linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%);
+      mask-image: linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%);
+    }
+    /* smooth hover pause */
+    .sponsor-track {
+      transition: animation-play-state 0.3s;
+    }
+
+    /* =============================================
+       PREFERS-REDUCED-MOTION
+    ============================================= */
+    @media (prefers-reduced-motion: reduce) {
+      .reveal, .reveal-child { transition: none; }
+      .nav-menu { transition: none; }
+      .flip-value.tick { animation: none; }
+      .time-card.seconds-glow { animation: none; }
+      .coordinator-avatar::after { animation: none; }
+      .btn-primary-hero::after { display: none; }
+      .marquee-track, .marquee-track-reverse, .sponsor-track { animation: none !important; }
+      .orb { animation: none; }
+      .mobile-toggle span { transition: none; }
+    }
   </style>
 </head>
 
@@ -2556,39 +2697,39 @@
       </div>
 
       <ul class="protocol-grid">
-        <li class="protocol-item">
+        <li class="protocol-item reveal-child">
           <div class="protocol-icon">✓</div>
           <span class="protocol-text">Read event rules carefully and check timings before registering.</span>
         </li>
-        <li class="protocol-item">
+        <li class="protocol-item reveal-child">
           <div class="protocol-icon">✓</div>
           <span class="protocol-text">Register in advance and confirm your attendance online.</span>
         </li>
-        <li class="protocol-item">
+        <li class="protocol-item reveal-child">
           <div class="protocol-icon">✓</div>
           <span class="protocol-text">Be punctual for all sessions and competitive event slots.</span>
         </li>
-        <li class="protocol-item">
+        <li class="protocol-item reveal-child">
           <div class="protocol-icon">✓</div>
           <span class="protocol-text">Maintain respectful conduct with coordinators, speakers, and participants.</span>
         </li>
-        <li class="protocol-item">
+        <li class="protocol-item reveal-child">
           <div class="protocol-icon">✓</div>
           <span class="protocol-text">Adhere strictly to your allotted time if presenting or performing.</span>
         </li>
-        <li class="protocol-item">
+        <li class="protocol-item reveal-child">
           <div class="protocol-icon">✓</div>
           <span class="protocol-text">Follow professional dress code throughout the event campus.</span>
         </li>
-        <li class="protocol-item">
+        <li class="protocol-item reveal-child">
           <div class="protocol-icon">✓</div>
           <span class="protocol-text">Carry and display your official college ID card at all times.</span>
         </li>
-        <li class="protocol-item">
+        <li class="protocol-item reveal-child">
           <div class="protocol-icon">✓</div>
           <span class="protocol-text">Follow instructions given by event coordinators and student volunteers.</span>
         </li>
-        <li class="protocol-item">
+        <li class="protocol-item reveal-child">
           <div class="protocol-icon">✓</div>
           <span class="protocol-text">Avoid unnecessary phone calls; use official email for queries.</span>
         </li>
@@ -2822,7 +2963,7 @@
       animate();
     })();
 
-    /* ---- Navbar scroll ---- */
+    /* ---- Navbar scroll & Mobile Menu ---- */
     const navbar = document.getElementById('mainNavbar');
     const menuToggle = document.getElementById('menuToggle');
     const navMenu = document.getElementById('navMenu');
@@ -2831,11 +2972,18 @@
       navbar.classList.toggle('scrolled', window.scrollY > 40);
     });
 
-    menuToggle.addEventListener('click', () => navMenu.classList.toggle('show'));
+    menuToggle.addEventListener('click', () => {
+      const isOpen = navMenu.classList.toggle('show');
+      menuToggle.classList.toggle('open', isOpen);
+      menuToggle.setAttribute('aria-expanded', isOpen);
+    });
 
     // Close menu on link click (mobile)
     navMenu.querySelectorAll('a').forEach(link => {
-      link.addEventListener('click', () => navMenu.classList.remove('show'));
+      link.addEventListener('click', () => {
+        navMenu.classList.remove('show');
+        menuToggle.classList.remove('open');
+      });
     });
 
     /* ---- Active nav highlight on scroll ---- */
@@ -2866,8 +3014,23 @@
       }
     });
 
-    /* ---- Countdown ---- */
+    /* ---- Countdown with digit flip tick & seconds pulse ---- */
     const eventDateUTC = new Date("2025-10-31T09:00:00Z").getTime();
+    const cdEls = {
+      days: document.getElementById('days'),
+      hours: document.getElementById('hours'),
+      minutes: document.getElementById('minutes'),
+      seconds: document.getElementById('seconds'),
+    };
+    const secCard = cdEls.seconds ? cdEls.seconds.closest('.time-card') : null;
+
+    function animateTick(el, newVal) {
+      if (el.textContent === String(newVal)) return;
+      el.classList.remove('tick');
+      void el.offsetWidth; // trigger reflow
+      el.textContent = newVal;
+      el.classList.add('tick');
+    }
 
     function updateCountdown() {
       const diff = eventDateUTC - Date.now();
@@ -2882,10 +3045,18 @@
       const s = Math.floor((diff % 60000) / 1000);
 
       function pad(n) { return String(n).padStart(2, '0'); }
-      document.getElementById('days').textContent = d;
-      document.getElementById('hours').textContent = pad(h);
-      document.getElementById('minutes').textContent = pad(m);
-      document.getElementById('seconds').textContent = pad(s);
+
+      if (cdEls.days) animateTick(cdEls.days, d);
+      if (cdEls.hours) animateTick(cdEls.hours, pad(h));
+      if (cdEls.minutes) animateTick(cdEls.minutes, pad(m));
+      if (cdEls.seconds) {
+        animateTick(cdEls.seconds, pad(s));
+        if (secCard) {
+          secCard.classList.remove('seconds-glow');
+          void secCard.offsetWidth;
+          secCard.classList.add('seconds-glow');
+        }
+      }
     }
 
     setInterval(updateCountdown, 1000);
@@ -2932,7 +3103,7 @@
     closeBrochureModal.addEventListener('click', () => brochureModal.classList.remove('active'));
     brochureModal.addEventListener('click', e => { if (e.target === brochureModal) brochureModal.classList.remove('active'); });
 
-    /* ---- Scroll Reveal ---- */
+    /* ---- Scroll Reveal for Sections ---- */
     const revealEls = document.querySelectorAll('.reveal');
     const revObs = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
@@ -2945,11 +3116,27 @@
 
     revealEls.forEach(el => revObs.observe(el));
 
+    /* ---- Staggered Scroll Reveal for Children (.reveal-child) ---- */
+    const revChildEls = document.querySelectorAll('.reveal-child');
+    const revChildObs = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const siblings = Array.from(entry.target.parentElement.querySelectorAll('.reveal-child'));
+          const idx = siblings.indexOf(entry.target);
+          setTimeout(() => {
+            entry.target.classList.add('visible');
+          }, idx * 90);
+          revChildObs.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.08, rootMargin: '0px 0px -30px 0px' });
+
+    revChildEls.forEach(el => revChildObs.observe(el));
+
     /* ---- Date Card 3D Tilt & Intersection Trigger ---- */
     const edcCard = document.getElementById('edcCard');
     const edcNumber = document.getElementById('edcNumber');
     if (edcCard) {
-      // Intersection Observer for month line & loaded state trigger
       const cardObs = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
           if (entry.isIntersecting) {
@@ -2961,7 +3148,6 @@
       }, { threshold: 0.2 });
       cardObs.observe(edcCard);
 
-      // Subtle 3D Tilt (Max +-3 deg)
       edcCard.addEventListener('mousemove', (e) => {
         if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
         const rect = edcCard.getBoundingClientRect();
@@ -3008,7 +3194,6 @@
         wrapper.scrollLeft = scrollLeft - walk;
       });
 
-      // Enable horizontal scrolling with mouse wheel
       wrapper.addEventListener('wheel', (e) => {
         if (e.deltaY !== 0) {
           wrapper.scrollLeft += e.deltaY;
