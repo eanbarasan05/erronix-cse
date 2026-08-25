@@ -1347,57 +1347,21 @@
       overflow-x: auto;
       overflow-y: hidden;
       position: relative;
-      padding: 16px 0 24px;
+      padding: 20px 24px 28px;
       scroll-behavior: smooth;
       -webkit-overflow-scrolling: touch;
       cursor: grab;
       user-select: none;
-      scrollbar-width: thin;
-      scrollbar-color: var(--brand-blue-light) rgba(0,0,0,0.05);
+      scrollbar-width: none; /* Firefox */
+      -ms-overflow-style: none; /* IE/Edge */
+    }
+
+    .marquee-wrapper::-webkit-scrollbar {
+      display: none; /* Chrome/Safari/Blink */
     }
 
     .marquee-wrapper:active {
       cursor: grabbing;
-    }
-
-    .marquee-wrapper::-webkit-scrollbar {
-      height: 6px;
-    }
-
-    .marquee-wrapper::-webkit-scrollbar-track {
-      background: rgba(0, 0, 0, 0.04);
-      border-radius: var(--radius-full);
-      margin: 0 24px;
-    }
-
-    .marquee-wrapper::-webkit-scrollbar-thumb {
-      background: var(--brand-blue-light);
-      border-radius: var(--radius-full);
-    }
-
-    .marquee-wrapper::-webkit-scrollbar-thumb:hover {
-      background: var(--brand-blue);
-    }
-
-    .marquee-wrapper::before,
-    .marquee-wrapper::after {
-      content: '';
-      position: absolute;
-      top: 0;
-      width: 120px;
-      height: 100%;
-      z-index: 5;
-      pointer-events: none;
-    }
-
-    .marquee-wrapper::before {
-      left: 0;
-      background: linear-gradient(to right, var(--bg-main), transparent);
-    }
-
-    .marquee-wrapper::after {
-      right: 0;
-      background: linear-gradient(to left, var(--bg-main), transparent);
     }
 
     .marquee-track {
